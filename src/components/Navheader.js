@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const NavContainer = styled.div`
-  height: 120px;
-  width: 75vw;
+  height: 100px;
+  width: 100vw;
   color: white;
+  align-items: center;
+  text-align: center;
 `;
 const NavTitle = styled.h1`
-  margin: 30px 0 0 70px;
+  margin: 10px 0 0 70px;
   font-weight: 400;
 `;
 const NavText = styled.p`

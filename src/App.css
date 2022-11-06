@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #201d47 !important;
+  overflow-x: hidden;
 }
 body {
-  background-color: #201D47;
   width: 100vw;
   height: 100vh;
+}
+.imgcoin {
+  width: 3%;
 }

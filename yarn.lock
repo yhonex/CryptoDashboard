@@ -1367,6 +1367,39 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@6.2.0":
+  "integrity" "sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.2.0.tgz"
+  "version" "6.2.0"
+
+"@fortawesome/fontawesome-svg-core@^6.2.0":
+  "integrity" "sha512-Cf2mAAeMWFMzpLC7Y9H1I4o3wEU+XovVJhTiNG8ZNgSQj53yl7OCJaS80K4YjrABWZzbAHVaoHE1dVJ27AAYXw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.2.0.tgz"
+  "version" "6.2.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/free-brands-svg-icons@^6.2.0":
+  "integrity" "sha512-fm1y4NyZ2qKYNmYhdMz9VAWRw1Et7PMHNunSw3W0SVAwKwv6o0qiJworLH3Y9SnmhHzAymXJwCX1op22FFvGiA=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.2.0.tgz"
+  "version" "6.2.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/free-solid-svg-icons@^6.2.0":
+  "integrity" "sha512-UjCILHIQ4I8cN46EiQn0CZL/h8AwCGgR//1c4R96Q5viSRwuKVo0NdQEc4bm+69ZwC0dUvjbDqAHF1RR5FA3XA=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.2.0.tgz"
+  "version" "6.2.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.2.0"
+
+"@fortawesome/react-fontawesome@^0.2.0":
+  "integrity" "sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "prop-types" "^15.8.1"
+
 "@humanwhocodes/config-array@^0.11.6":
   "integrity" "sha512-jJr+hPTJYKyDILJfhNSHsjiwXYf26Flsz8DvNndOsHs5pwSnpGUEy8yzF0JYhCEvTDdV2vuOK5tt8BVhwO5/hg=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.6.tgz"
@@ -3256,6 +3289,11 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
+"bootstrap@^5.2.2":
+  "integrity" "sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.2.tgz"
+  "version" "5.2.2"
+
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
   "resolved" "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -3439,6 +3477,11 @@
   "integrity" "sha512-oSvEeo6ZUD7NepqAat3RqoucZ5SeqLJgOvVIwkafu6IP3V0pO38s/ypdVUmDDK6qIIHNlYHJAKX9E7R7HoKElw=="
   "resolved" "https://registry.npmjs.org/char-regex/-/char-regex-2.0.1.tgz"
   "version" "2.0.1"
+
+"chart.js@^3.9.1":
+  "integrity" "sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w=="
+  "resolved" "https://registry.npmjs.org/chart.js/-/chart.js-3.9.1.tgz"
+  "version" "3.9.1"
 
 "check-types@^11.1.1":
   "integrity" "sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ=="
