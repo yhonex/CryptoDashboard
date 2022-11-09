@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CryptoDashboard/static/css/main.c19bf07b.css",
+    "main.js": "/CryptoDashboard/static/js/main.2003b947.js",
+    "static/js/787.dbe7a33c.chunk.js": "/CryptoDashboard/static/js/787.dbe7a33c.chunk.js",
+    "index.html": "/CryptoDashboard/index.html",
+    "main.c19bf07b.css.map": "/CryptoDashboard/static/css/main.c19bf07b.css.map",
+    "main.2003b947.js.map": "/CryptoDashboard/static/js/main.2003b947.js.map",
+    "787.dbe7a33c.chunk.js.map": "/CryptoDashboard/static/js/787.dbe7a33c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c19bf07b.css",
+    "static/js/main.2003b947.js"
+  ]
+}
