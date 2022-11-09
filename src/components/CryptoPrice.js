@@ -1,11 +1,11 @@
 import { faBitcoin, faEthereum } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { CryptosState } from "../context/Cryptocontex";
 
 const Content = styled.div`
   display: flex;
+  flex-direction: row;
 `;
 const PriceContent = styled.div`
   display: flex;
@@ -16,23 +16,55 @@ const PriceContent = styled.div`
   color: white;
   padding: 12px;
   margin: 15px;
+  @media screen and (max-width: 1224px) {
+    display: inline-block;
+  }
 `;
-const ColoPricebit = styled.h2`
+const ColoPricebit = styled.h3`
   color: #eebc1d;
   margin: 2px 5px 5px 10px;
 `;
-const ColoPriceeth = styled.h2`
+const ColoPriceeth = styled.h3`
   color: #a330ff;
   margin: 5px;
   margin: 2px 5px 5px 10px;
 `;
-const ColoPriceusd = styled.h3`
+const ColoPriceusd = styled.h5`
   color: #50e3c2;
   margin: 5px;
 `;
 
 const CryptoPrice = () => {
-  const { pricebit, priceeth } = CryptosState();
+  const [etheur, setEtheur] = useState("");
+  const [bitcoin, setBitcoin] = useState("");
+
+  const price1 = () => {
+    let wsEtheru = new WebSocket(
+      "wss://stream.binance.com:9443/ws/etheur@trade"
+    );
+    wsEtheru.onmessage = (event) => {
+      let DataPrice = JSON.parse(event.data);
+
+      setEtheur(DataPrice.p);
+    };
+  };
+  const price2 = () => {
+    let wsBitcoin = new WebSocket(
+      "wss://stream.binance.com:9443/ws/btcusdt@trade"
+    );
+    wsBitcoin.onmessage = (event) => {
+      let Databitcoin = JSON.parse(event.data);
+
+      setBitcoin(Databitcoin.p);
+    };
+  };
+  useEffect(() => {
+    price2();
+  }, []);
+
+  useEffect(() => {
+    price1();
+  }, []);
 
   return (
     <Content>
@@ -40,33 +72,16 @@ const CryptoPrice = () => {
         <FontAwesomeIcon icon={faBitcoin} className="fa-2xl" />
         <ColoPricebit>Bitcoin</ColoPricebit>
 
-        <ColoPriceusd>{pricebit} USD</ColoPriceusd>
+        <ColoPriceusd>{etheur} USD</ColoPriceusd>
       </PriceContent>
       <PriceContent>
-      <FontAwesomeIcon icon={faEthereum} className="fa-2xl" />
+        <FontAwesomeIcon icon={faEthereum} className="fa-2xl" />
         <ColoPriceeth>Ethereum</ColoPriceeth>
 
-        <ColoPriceusd>{priceeth} USD</ColoPriceusd>
+        <ColoPriceusd>{bitcoin} USD</ColoPriceusd>
       </PriceContent>
     </Content>
   );
 };
 
 export default CryptoPrice;
-/* const [etheur, setEtheur] = useState("");
-  const [bitcoin, setBitcoin] = useState("");
-  let wsEtheru = new WebSocket("wss://stream.binance.com:9443/ws/etheur@trade");
-  let wsBitcoin = new WebSocket(
-    "wss://stream.binance.com:9443/ws/btcusdt@trade"
-  );
-
-  wsEtheru.onmessage = (event) => {
-    let DataPrice = JSON.parse(event.data);
-
-    setEtheur(DataPrice.p);
-  };
-
-  wsBitcoin.onmessage = (event) => {
-    let Databitcoin = JSON.parse(event.data);
-    setBitcoin(Databitcoin.p);
-  };*/

@@ -17,6 +17,10 @@ const ContainerChart = styled.div`
   align-items: "center";
   justify-content: "center";
   margin-top: 5px;
+  @media screen and (max-width: 1224px) {
+    float: none;
+    width: 70%;
+  }
 `;
 const Cryptochart = () => {
   const { ethereumData, hitoricalData, days, currency } = CryptosState();

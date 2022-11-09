@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CryptosState } from "../context/Cryptocontex";
 import Coinrow from "./Coinrow";
 
-const titles = ["Coin", "Price", "Price Change", "24h Volume"];
+const titles = ["Coin", "High 24h", "Price Change", "24h Volume"];
 
 const Coinslist = () => {
   const { coins } = CryptosState();
@@ -18,7 +18,7 @@ const Coinslist = () => {
     <>
       <input
         type="text"
-        placeholder="search a Coin"
+        placeholder="Search a Coin"
         className="form-control  border-1 text-light mt-4 text-center"
         onChange={(e) => setSearch(e.target.value)}
       />

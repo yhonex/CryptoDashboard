@@ -10,13 +10,25 @@ import Coinslist from "../components/Coinslist";
 
 const DashBoardContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 1224px) {
+    display: inline-block;
+    align-items: "center";
+    justify-content: "center";
+  }
 `;
 const Content = styled.div`
-  width: 50vw;
+  max-width: 50vw;
+  @media screen and (max-width: 1224px) {
+    max-width: 100vw;
+  }
 `;
 const PriceContainer = styled.div`
-  width: 50vw;
+  max-width: 50vw;
   margin-left: 20px;
+  @media screen and (max-width: 1224px) {
+    max-width: 100vw;
+  }
 `;
 
 const DashBoard = () => {

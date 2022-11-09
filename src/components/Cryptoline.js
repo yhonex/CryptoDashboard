@@ -8,8 +8,8 @@ const ContainerChart = styled.div`
   width: 50vw;
   display: "flex";
 
-  align-items: "left";
-  justify-content: "left";
+  align-items: "center";
+  justify-content: "center";
   margin-top: 10px;
   padding: 10px;
 `;
